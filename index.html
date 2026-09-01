@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="./output.css" rel="stylesheet" />
+    <title>snapp</title>
+  </head>
+  <body>
+    <header>
+      <section class="container-fluid mx-auto">
+        <!-- laptop -->
+        <section class="hidden md:flex  flex-wrap justify-start items-center ">
+          <div
+            class="hidden md:flex fixed top-0 z-20 justify-start items-center w-12/12 py-8 px-10 gap-5 bg-gray-100"
+          >
+            <img src="./assets/snappTextLogo.svg" alt="" />
+            <nav>
+              <ul class="flex justify-start items-center gap-8">
+             <div id="mega-menu-icons" class="items-center  justify-between hidden w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col mt-4 font-medium  md:flex-row  md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                <li>
+                    <a href="#" class="block py-2 px-3 text-fg-brand border-b border-light hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0" aria-current="page"></a>
+                </li>
+                <li class="px-5">
+                  <button
+                    id="mega-menu-dropdown-button"
+                    data-dropdown-toggle="mega-menu-dropdown"
+                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-heading border-b border-light md:w-auto hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0"
+                  >
+                    سوپر اپ اسنپ
+                    <svg
+                      class="w-4 h-4 ms-1.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m19 9-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="mega-menu-dropdown"
+                    class="absolute z-10  grid hidden  w-auto grid-cols-2 text-sm bg-neutral-primary-soft border border-default rounded-base shadow md:grid-cols-3"
+                  >
+                    <div class="p-4 pb-0 text-heading md:pb-4">
+                      <ul
+                        class="space-y-3"
+                        aria-labelledby="mega-menu-dropdown-button"
+                      >
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                           درخواست اسنپ 
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                            اسنپ فود 
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                            پیک موتوری 
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                             سوپر مارکت 
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-4 pb-0 md:pb-4">
+                      <ul class="space-y-3">
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                            کافه 
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                            اسنپ هتل 
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                            رزرو قطار 
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                            رزرو بلیط اتوبوس
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-4">
+                      <ul class="space-y-3">
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                             درخواست وانت بار
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                          درخواست بارکش
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-body hover:text-fg-brand">
+                            خدمات اسنپ 
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                
+                <li><a href="">ثبت نام راننده اسنپ </a></li>
+                <li><a href=""> اسنپ پی (سرویس اعتباری)</a></li>
+                <li><a href=""> باشگاه رانندگان</a></li>
+                <li><a href="">پنل سازمانی </a></li>
+                <li><a href=""> بلاگ </a></li>
+                 <li>
+                    <button id="mega-menu-icons-dropdown-button" data-dropdown-toggle="mega-menu-icons-dropdown" class="flex items-center justify-between w-full py-2 px-3 font-medium text-heading border-b border-light md:w-auto hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                       درباره اسنپ   
+                        <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+                    </button>
+                    <li id="mega-menu-icons-dropdown" class="absolute  grid hidden z-10  w-auto grid-cols-2 text-sm bg-neutral-primary-soft border border-default rounded-base shadow md:grid-cols-3">
+                        <div class="p-4 pb-0   text-heading md:pb-4 ">
+                            <ul class="space-y-3 font-normal" aria-labelledby="mega-menu-icons-dropdown-button">
+                                <li>
+                                    <a href="#" class="inline-flex items-center text-body hover:text-fg-brand">
+                                        <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                                         فرصت های شغلی
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="inline-flex items-center text-body hover:text-fg-brand">
+                                        <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.03v13m0-13c-2.819-.831-4.715-1.076-8.029-1.023A.99.99 0 0 0 3 6v11c0 .563.466 1.014 1.03 1.007 3.122-.043 5.018.212 7.97 1.023m0-13c2.819-.831 4.715-1.076 8.029-1.023A.99.99 0 0 1 21 6v11c0 .563-.466 1.014-1.03 1.007-3.122-.043-5.018.212-7.97 1.023"/></svg>
+                                        درباره ما 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="inline-flex items-center text-body hover:text-fg-brand">
+                                        <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11H4m15.5 5a.5.5 0 0 0 .5-.5V8a1 1 0 0 0-1-1h-3.75a1 1 0 0 1-.829-.44l-1.436-2.12a1 1 0 0 0-.828-.44H8a1 1 0 0 0-1 1M4 9v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1h-3.75a1 1 0 0 1-.829-.44L9.985 8.44A1 1 0 0 0 9.157 8H5a1 1 0 0 0-1 1Z"/></svg>
+                                        تماس با ما 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                 
+                    </li>
+                
+                
+              </ul>
+            </nav>
+          </div>
+ 
+        </section>
+         </section>
+        <!-- mobile -->
+         
+
+     
+   
+    </header>
+  <main class="mt-40 w-full">
+    <section class="container-fluid mx-auto">
+       <section class="flex flex-wrap w-full justify-between items-center px-20 ">
+       <div class=" flex flex-col sm:w-6/12 gap-8     md:w-6/12  ">
+       <p class="text-4xl font-bold text-heading ">
+        تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!
+       </p>
+       <p class="text-base text-gray-400">از درخواست خودرو تا سفارش غذا، خرید سوپرمارکتی، رزرو بلیت سفر و... را با اسنپ انجام دهید.</p>
+       <button type="button" class="text-white w-40 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5"><a href="">ورود به وب اپلیکیشن</a></button>
+       
+    </div>
+       <div class="flex justify-center w-6/12 gap-5 md:w-6/12">
+      <img src="./assets/newheroimage.png" alt="">
+       </div>
+      
+    
+   
+          
+       </section>
+      
+      <section class="flex flex-wrap flex-col ">
+        <div class=" w-12/12 px-10">
+        <p class="text-2xl text-heading">یک اپلیکیشن، برای تمام نیازها</p>
+        
+       </div>
+       <section class="w-12/12 px-10 py-10 flex gap-15">
+       <div class="bg-gray-50 transition-colors duration-200 ease-in flex flex-col justify-center items-center px-5 py-5 rounded-4xl hover:bg-blue-400 ">
+       <i class="bi bi-star text-amber-300 text-4xl "></i>
+       <a href="">پیشنهادی</a>
+       </div>
+       <div class="bg-gray-50 transition-colors duration-200 ease-in flex flex-col justify-center items-center px-5 py-5 rounded-4xl hover:bg-blue-400 ">
+       <i class="bi bi-airplane text-red-400 text-4xl "></i>
+       <a href="">پیشنهادی</a>
+       </div>
+        <div class="bg-gray-50 transition-colors duration-200 ease-in flex flex-col justify-center items-center px-5 py-5 rounded-4xl hover:bg-blue-400 ">
+      <i class="bi bi-car-front-fill text-green-500  text-4xl"></i>
+       <a href="">حمل ونقل</a>
+       </div>
+        <div class="bg-gray-50 transition-colors duration-200 ease-in flex flex-col justify-center items-center px-5 py-5 rounded-4xl hover:bg-blue-400 ">
+       <i class="bi bi-credit-card-2-back text-blue-400 text-4xl "></i>
+       <a href="">پیشنهادی</a>
+       </div>
+
+
+       </section>
+
+      </section>
+      <section class="flex  w-12/12 gap-5">
+        <section class="w-4/12 bg-gray-200 flex py-2 px-5 justify-evenly items-center rounded-4xl ">
+            <div class="flex flex-col gap-2 rounded-2xl">
+           <p><a class="text-xl text-black" href="">تاکسی اینترنتی </a></p>
+           <p><a class="text-sm  text-gray-500" href="">درخواست آنلاین خودرو</a></p>
+            </div>
+            <i class= " bi bi-car-front text-green-500 text-5xl"></i>
+        </section>
+          <section class="w-4/12 bg-gray-200 flex  py-2 px-5 justify-evenly items-center   rounded-4xl">
+            <div class="flex flex-col gap-2">
+           <p><a class="text-xl text-black" href=""> سفارش انلاین غذا </a></p>
+           <p><a class="text-sm  text-gray-500" href="">  سفارش غذا /نان/شیرینی </a></p>
+            </div>
+            <i class= " bi bi-fork-knife text-red-300 text-5xl"></i>
+        </section>
+          <section class="w-4/12 bg-gray-200 flex  rounded-4xl  py-2 px-5 justify-evenly items-center ">
+            <div class="flex flex-col gap-2">
+           <p><a class="text-xl text-black" href=""> سوپر مارکت انلاین اسنپ  </a></p>
+           <p><a class="text-sm  text-gray-500" href="">تهیه اقلام مورد نیاز  </a></p>
+            </div>
+            <i class= " bi bi-basket text-red-400 text-5xl"></i>
+        </section>
+      </section>
+          <section class="flex w-12/12  gap-5 py-10">
+        <section class="w-4/12 bg-gray-200 flex  rounded-4xl  py-2 px-5 justify-evenly items-center ">
+            <div class="flex flex-col gap-2">
+           <p><a class="text-xl text-black" href="">پیک موتوری   </a></p>
+           <p><a class="text-sm  text-gray-500" href="">  حمل ونقل انواع کالا ها </a></p>
+            </div>
+            <i class= " bi bi-bicycle text-green-500 text-5xl"></i>
+        </section>
+          <section class="w-4/12 bg-gray-200 flex  rounded-4xl  py-2 px-5 justify-evenly items-center ">
+            <div class="flex flex-col gap-2">
+           <p><a class="text-xl text-black" href=""> اسنپ پی  </a></p>
+           <p><a class="text-sm  text-gray-500" href=""> سرویس اعتباری اسنپ </a></p>
+            </div>
+            <i class= " bi bi-car-front text-blue-500 text-5xl"></i>
+        </section>
+          <section class="w-4/12 bg-gray-200 flex  rounded-4xl  py-2 px-5 justify-evenly items-center ">
+            <div class="flex flex-col gap-2">
+           <p><a class="text-xl text-black" href=""> خرید بلیط هواپیما </a></p>
+           <p><a class="text-sm  text-gray-500" href="">  سرویس بلیط اسنپ </a></p>
+            </div>
+            <i class= " bi bi-airplane text-red-400 text-5xl"></i>
+        </section>
+      </section>
+       <section class="flex w-12/12  gap-5 py-5">
+        <section class="w-4/12 bg-gray-200 flex   rounded-4xl py-2 px-5 justify-evenly items-center ">
+            <div class="flex flex-col gap-2">
+           <p><a class="text-xl text-black" href="">رزرو هتل   </a></p>
+           <p><a class="text-sm  text-gray-500" href="">  رزرو آنلاین هتل </a></p>
+            </div>
+            <i class= " bi bi-house-door text-amber-800 text-5xl"></i>
+        </section>
+          <section class="w-4/12 bg-gray-200 flex  rounded-4xl py-2 px-5 justify-evenly items-center ">
+            <div class="flex flex-col gap-2">
+           <p><a class="text-xl text-black" href=""> اسنپ بیمه  </a></p>
+           <p><a class="text-sm  text-gray-500" href="">  خرید آنلاین با اسنپ بیمه </a></p>
+            </div>
+            <i class= " bi bi-wallet text-blue-500 text-5xl"></i>
+        </section>
+          <section class="w-4/12 bg-gray-200 flex  rounded-4xl py-2 px-5 justify-evenly items-center ">
+            <div class="flex flex-col gap-2">
+           <p><a class="text-xl text-black" href="">ثبت نام راننده   </a></p>
+           <p><a class="text-sm  text-gray-500" href="">  ثبت نام تاکسی اینترنتی</a></p>
+            </div>
+            <i class= " bi bi-check-square-fill text-green-500 text-5xl"></i>
+        </section>
+      </section>
+      <section class="flex flex-wrap justify-center items-center ">
+          <div class="w-10/12  ">
+            <img class="rounded-4xl" src="./assets/taxidiscountslider.jpg" alt="">
+          </div>
+
+
+
+         </section>
+           <section class="flex flex-wrap bg-gray-400 h-900 justify-center w-full items-center py-5 my-5">
+         <div class="w-12/12 flex flex-col gap-15 items-center  ">
+         <p class="text-4xl ">در کمتر از ۱۰ دقیقه ثبت‌نام کنید و به ناوگان اسنپ بپیوندید.</p>
+         <p class="text-2xl text-amber-50 ">       بدون نیاز به مراجعه‌ی حضوری، از طریق این صفحه، تمام مراحل ثبت‌نام را اینترنتی انجام دهید    .</p>
+        <button type="button" class="text-white w-3xs bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">ثبت نام رانندگان </button>
+       
+         </div>
+         <div class="w-12/12 mtn">
+            
+<video class="w-full rounded-base mtn" controls >
+  <source src="./assets/jazbranandeh1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+         </div>
+
+      <div class=" flex flex-wrap justify-between items-center gap-5 ">
+           
+
+<div class=" w-12/12 md:w-5/12 bg-neutral-primary-soft flex flex-col gap-5   mx-5 p-6 border border-default rounded-base shadow-xs">
+    <a href="#" class="flex justify-center">
+        <img class="rounded-base  " src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-income.png" alt="" />
+    </a>
+    <a href="#">
+        <h5 class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">    درآمد تضمینی + پاداش‌های ماهانه و هفتگی</h5>
+    </a>
+    <p class="mb-6 text-body">  با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را افزایش دهید.</p>
+    <a href="#" class="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+       ادامه مطلب 
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+</div>
+<div class=" w-12/12 md:w-5/12 bg-neutral-primary-soft flex flex-col gap-5   mx-5 p-6 border border-default rounded-base shadow-xs">
+    <a href="#" class="flex justify-center">
+        <img class="rounded-base  " src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-hour.png" alt="" />
+    </a>
+    <a href="#">
+        <h5 class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">    ساعت کاری دلخواه</h5>
+    </a>
+    <p class="mb-6 text-body">  فعالیت در ناوگان اسنپ محدودیت زمانی ندارد و می‌توانید فعالیت خود را در هر ساعت از شبانه‌روز و متناسب با برنامه‌ی زندگی‌تان شخصی‌سازی کنید.</p>
+    <a href="#" class="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+       ادامه مطلب 
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+</div>
+<div class=" w-12/12 md:w-5/12 bg-neutral-primary-soft flex flex-col gap-5   mx-5 p-6 border border-default rounded-base shadow-xs">
+    <a href="#" class="flex justify-center">
+        <img class="rounded-base  " src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-benefits.png" alt="" />
+    </a>
+    <a href="#">
+        <h5 class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">    مزایا و خدمات باشگاه رانندگان </h5>
+    </a>
+    <p class="mb-6 text-body">  در باشگاه رانندگان اسنپ می‌توانید از تسهیلات و خدمات متنوعی از جمله خدمات خودرویی، خدمات درمانی و همچنین خدمات رفاهی و آموزشی بهره‌مند شوید.</p>
+    <a href="#" class="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+       ادامه مطلب 
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+</div>
+<div class=" w-12/12 md:w-5/12 bg-neutral-primary-soft flex flex-col gap-5   mx-5 p-6 border border-default rounded-base shadow-xs">
+    <a href="#" class="flex justify-center">
+        <img class="rounded-base  " src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-carfix.png" alt="" />
+    </a>
+    <a href="#">
+        <h5 class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">    کار‌فیکس</h5>
+    </a>
+    <p class="mb-6 text-body"> باشگاه رانندگان اسنپ به‌تازگی سرویس جدید «اسنپ کارفیکس» را برای سهولت دسترسی کاربران راننده به انواع خدمات خودرویی راه‌اندازی کرده است</p>
+    <a href="#" class="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+       ادامه مطلب 
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+</div>
+<div class=" w-12/12 md:w-5/12 bg-neutral-primary-soft flex flex-col gap-5   mx-5 p-6 border border-default rounded-base shadow-xs">
+    <a href="#" class="flex justify-center">
+        <img class="rounded-base  " src="https://web-cdn.snapp.ir/snapp-website/images/homepage/safety.svg" alt="" />
+    </a>
+    <a href="#">
+        <h5 class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">    امنیت سفر کاربران راننده در اسنپ</h5>
+    </a>
+    <p class="mb-6 text-body"> اسنپ با ارائه سرویس امنیت سفر در اپلیکیشن رانندگان و بهبود مستمر امکانات امنیتی این سرویس، تلاش می‌‌کند تجربه سفر با اسنپ برای کاربران راننده امن‌ و مطمئن باشد</p>
+    <a href="#" class="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+       ادامه مطلب 
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+</div>
+<div class=" w-12/12 md:w-5/12 bg-neutral-primary-soft flex flex-col gap-5   mx-5 p-6 border border-default rounded-base shadow-xs">
+    <a href="#" class="flex justify-center">
+        <img class="rounded-base  " src="https://web-cdn.snapp.ir/snapp-website/images/homepage/support.svg" alt="" />
+    </a>
+    <a href="#">
+        <h5 class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">        پشتیبانی ۲۴ ساعته و سریع </h5>
+    </a>
+    <p class="mb-6 text-body"> تیم پشتیبانی اسنپ در تمامی ساعت‌های شبانه‌روز پاسخگوی سوال‌ها و مشکلات کاربران راننده است. بخش «پشتیبانی» در اپلیکیشن رانندگان، سریع‌ترین راه ارتباطی شما با تیم پشتیبانی اسنپ است</p>
+    <a href="#" class="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+       ادامه مطلب 
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+</div>
+
+
+
+
+         </div>
+        </section>
+      </section>
+
+             
+         <section   class="container-fluid  my-5">
+         <section class="flex justify-between items-center gap-5 w-full    ">
+         <div class="w-/12 md:w-4/12">
+         
+
+<div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+    <a href="#">
+        <img class="rounded-base" src="./assets/bime.jpg" alt="" />
+    </a>
+    <div class="p-6 text-center flex items-center gap-10 ">
+       <i class="bi bi-umbrella text-4xl text-blue-500"></i>
+        <a href="#">
+            <h5 class="mt-3 mb-6 text-xl font-semibold tracking-tight text-heading"> بیمه بدنه </h5>
+        </a>
+        <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">خرید کنید </button>
+    </div>
+</div>
+
+         </div>
+         <div class="w-12/12 md:w-4/12">
+         
+
+<div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+    <a href="#">
+        <img class="rounded-base" src="./assets/bmob.jpg" alt="" />
+    </a>
+    <div class="p-6 text-center flex items-center gap-10 ">
+       <i class="bi bi-umbrella text-4xl text-blue-500"></i>
+        <a href="#">
+            <h5 class="mt-3 mb-6 text-xl font-semibold tracking-tight text-heading"> بیمه موبایل  </h5>
+        </a>
+        <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">خرید کنید </button>
+    </div>
+</div>
+
+         </div>
+         <div class="w-12/12 md:w-4/12">
+           
+
+<div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+    <a href="#">
+        <img class="rounded-base" src="./assets/bimm.jpg" alt="" />
+    </a>
+    <div class="p-6 text-center flex items-center gap-10 ">
+       <i class="bi bi-umbrella text-4xl text-blue-500"></i>
+        <a href="#">
+            <h5 class="mt-3 mb-6 text-xl font-semibold tracking-tight text-heading"> بیمه موتور  </h5>
+        </a>
+        <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">خرید کنید </button>
+    </div>
+</div>
+
+         </div>
+         </section>
+         <p class="text-2xl  py-5  ">خرید اقساطی با سرویس اعتباری</p>
+        <section class="flex  justify-between items-center my-5  gap-5 ">
+         
+          <div class="w-12/12 md:w-4/12">
+           
+
+<div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+    <a href="#">
+        <img class="rounded-base" src="./assets/ghest.jpg" alt="" />
+    </a>
+    <div class="p-6 text-center flex items-center gap-2">
+       <i class="bi bi-umbrella text-4xl text-blue-500"></i>
+        <a  href="#">
+            <h5 class="mt-3 mb-6 text- font-semibold tracking-tight text-heading"> در 4 قسط بدون سود و کارمزد    </h5>
+        </a>
+        <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">خرید کنید </button>
+    </div>
+</div>
+
+         </div>
+
+          <div class="w-12/12 md:w-4/12">
+           
+
+<div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+    <a href="#">
+        <img class="rounded-base" src="./assets/ghest2.jpg" alt="" />
+    </a>
+    <div class="p-6 text-center flex items-center gap-2 ">
+       <i class="bi bi-umbrella text-4xl text-blue-500"></i>
+        <a href="#">
+            <h5 class="mt-3 mb-6 text- font-semibold tracking-tight text-heading"> در 4 قسط بدون سود و کارمزد    </h5>
+        </a>
+        <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">خرید کنید </button>
+    </div>
+</div>
+
+         </div>
+
+         <div class="w-12/12 md:w-4/12 ">
+           
+
+
+<div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+    <a href="#">
+        <img class="rounded-base" src="./assets/ghe3.jpg" alt="" />
+    </a>
+    <div class="p-6 text-center flex items-center gap-2 ">
+       <i class="bi bi-umbrella text-4xl text-blue-500"></i>
+        <a href="#">
+            <h5 class="mt-3 mb-6 text- font-semibold tracking-tight text-heading"> در 4 قسط بدون سود و کارمزد    </h5>
+        </a>
+        <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">خرید کنید </button>
+    </div>
+</div>
+
+         </div>
+
+    </section>
+       <p class="py-5 text-2xl">تازه‌ترین‌های وبلاگ اسنپ</p>
+         <section class="flex flex-wrap  my-5 justify-between items-center">
+
+         
+            
+
+<div class=" w-12/12 md:w-4/12 bg-neutral-primary-soft block max-w-sm border h-98  border-default rounded-base shadow-xs">
+    <a href="#">
+        <img class="rounded-t-base h-42" src="./assets/Blog-header-1600x400-1.jpg" alt="" />
+    </a>
+    <div class="p-6 ">
+       
+           
+        
+        <a href="#">
+            <h5 class="mt-3 mb-6 text-xl font-semibold tracking-tight text-heading">  سرویس «سفر اشتراکی» اسنپ،‌ به‌صرفه‌تر و پایدارتر   </h5>
+        </a>
+         <a href="#">
+            <h5 class="mt-3 mb-6 text-sm text-gray-500">  سرویس «سفر اشتراکی» اسنپ،‌ به‌صرفه‌تر و پایدارتر   </h5>
+        </a>
+    </div>
+</div>
+
+         
+
+           
+            
+
+<div class=" w-12/12 md:w-4/12 bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+    <a href="#">
+        <img class="rounded-t-base" src="./assets/Layer-17.jpg" alt="" />
+    </a>
+    <div class="p-6 ">
+       
+           
+        
+        <a href="#">
+            <h5 class="mt-3 mb-6 text-xl font-semibold tracking-tight text-heading">  افزایش امنیت کاربران راننده اسنپ با سرویس «امنیت سفر»  </h5>
+        </a>
+         <a href="#">
+            <h5 class="mt-3 mb-6 text-sm text-gray-500"> 
+اسنپ با معرفی سرویس «امنیت سفر» به کاربران مسافر این امکان را داده تا در صورت بروز هرگونه مشکل یا احساس ناامنی، به طور مستقیم با تیم امنیت سفر تماس بگیرند   </h5>
+        </a>
+    </div>
+</div>
+
+         
+
+          
+            
+
+<div class=" w-12/12 md:w-4/12 bg-neutral-primary-soft block max-w-sm border h-99.5 border-default rounded-base shadow-xs">
+    <a href="#">
+        <img class="rounded-t-base h-43" src="./assets/PR_Cab_Blog-Cover_1007-scaled.jpg" alt="" />
+    </a>
+    <div class="p-6 ">
+       
+           
+        
+        <a href="#">
+            <h5 class="mt-3 mb-6 text-xl font-semibold tracking-tight text-heading">  ۱۶ باور اشتباه درباره سفرهای اسنپی </h5>
+        </a>
+         <a href="#">
+            <h5 class="mt-3 mb-6 text-sm text-gray-500">  
+شاید هنگام استفاده از اسنپ سوال‌هایی برای‌تان پیش آمده باشد که پاسخش را نمی‌دانید؛...   </h5>
+        </a>
+    </div>
+</div>
+
+         
+         </section>
+
+
+
+         </section>
+      
+
+
+
+
+      
+  </main>
+
+  
+
+<footer class="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-telegram"></i>
+      <i class="bi bi-facebook"></i>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-body sm:mt-0">
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">درباره ما</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">بلاگ</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">تماس با ما</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">فرصت‌های شغلی
+
+</a>
+        </li>
+    </ul>
+    </div>
+    <section class="container-fluid mx-auto my-5">
+      <section class="flex flex-wrap justify-center  items-center ">
+      <div class="w-6/12 flex justify-center ">
+        <img src="./assets/fot.png" alt="">
+      </div>
+       <div class="w-6/12 flex justify-center items-center">
+        <img src="./assets/fot2.png" alt="">
+      </div>
+   
+      </section>
+    </section>
+
+
+   </div>
+</footer>
+
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
